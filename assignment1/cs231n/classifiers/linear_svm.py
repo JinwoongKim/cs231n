@@ -41,8 +41,6 @@ def svm_loss_naive(W, X, y, reg):
         number_of_loss_contributor += 1
     dW[:, y[i]] += (number_of_loss_contributor * -X[i])
 
-  print('haha',_dW.shape)
-
   # Right now the loss is a sum over all training examples, but we want it
   # to be an average instead so we divide by num_train.
   loss /= num_train
